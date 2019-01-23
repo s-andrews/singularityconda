@@ -9,7 +9,8 @@ MAINTAINER Simon Andrews
 %runscript
 
 %post  
-sudo apt install wget
+apt update
+apt install wget
 wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b
 
